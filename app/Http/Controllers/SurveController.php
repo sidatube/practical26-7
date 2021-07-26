@@ -9,10 +9,8 @@ class SurveController extends Controller
 {
     //
     function show(){
-        $oshirase="";
         $getFeedback=Survay::all();
         return view("feedbackShow",[
-            "oshirase"=>$oshirase,
             "data"=>$getFeedback
         ]);
     }
@@ -20,7 +18,6 @@ class SurveController extends Controller
         return view("practical");
     }
     function save(Request $request){
-        $oshirase="Feedback thành công!";
         Survay::create([
             "name"=>$request->get("name"),
             "email"=>$request->get("email"),

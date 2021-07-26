@@ -11,8 +11,6 @@
 <body>
 <div class="container">
     <div class="col-md-10">
-
-        <h2>{{$oshirase}}</h2>
         <h2>Bảng feedback</h2>
         <a class="btn btn-outline-primary" style="float: right" href="{{url("/feedback")}}">Add feedback</a>
         <table class="table">
